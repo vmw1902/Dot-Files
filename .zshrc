@@ -107,6 +107,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias dcd="docker-compose down"
+alias dcdv="docker-compose down -v"
+alias dcu="docker-compose up"
+alias dcub="docker-compose up --build"
+alias dcul="docker compose -f docker-compose.yml -f docker-compose.override.yml -f docker-compose.live.yml up"
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
