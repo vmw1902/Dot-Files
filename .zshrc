@@ -113,6 +113,9 @@ alias dcdv="docker-compose down -v"
 alias dcu="docker-compose up"
 alias dcub="docker-compose up --build"
 alias dcul="docker compose -f docker-compose.yml -f docker-compose.override.yml -f docker-compose.live.yml up"
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+alias killPorts='kill $(lsof -t -i:8082); kill $(lsof -t -i:8085); kill $(lsof -t -i:4000); kill $(lsof -t -i:5001);'
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
